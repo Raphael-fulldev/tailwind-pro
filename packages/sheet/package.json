@@ -1,0 +1,21 @@
+{
+  "name": "candy-sheet",
+  "private": false,
+  "version": "0.5.5",
+  "description": "",
+  "main": "dist/index.js",
+  "module": "dist/index.es.js",
+  "scripts": {
+    "clean": "run-p clean:*",
+    "clean:node_modules": "rimraf node_modules",
+    "clean:build": "rimraf dist",
+    "build": "rollup -c --environment PRODUCTION",
+    "dev": "rollup -c -w --environment DEVELOPMENT",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "tranbathanhtung",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  }
+}
